@@ -1,0 +1,1 @@
+To maintain BSPs and board documets like pin and peripherals info.

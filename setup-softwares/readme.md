@@ -1,0 +1,1 @@
+This section of the repository is dedicated to collecting and maintaining support software such as toolchains, BSPs, HAL, device trees, CPU support software, and other tools required for development.
