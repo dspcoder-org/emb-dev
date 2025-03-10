@@ -1,7 +1,4 @@
 {
     "workbench.colorTheme": "Default Dark Modern",
-    "workbench.startupEditor": "none",
-    "files.exclude": {
-        "**/.**": true
-    }
+    "workbench.startupEditor": "none"
 }
