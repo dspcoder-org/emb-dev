@@ -1,6 +1,6 @@
 # Docker Image for question development 
 
-map local directory to /tmp, image will treat /tmp as azure storage
+copy from local directory to /tmp, the image will treat /tmp as Azure storage
 
     docker build --platform linux/amd64 -t dspcoder-dev .
 
