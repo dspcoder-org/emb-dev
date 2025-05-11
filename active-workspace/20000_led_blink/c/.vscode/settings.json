@@ -1,0 +1,31 @@
+{
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=iwyu",
+        "--suggest-missing-includes",
+        "--completion-style=detailed",
+        "--fallback-style=Google"
+    ],
+    "clangd.onConfigChanged": "restart",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true,
+    "files.associations": {
+        ".h": "c",
+        ".c": "c",
+        ".cpp": "cpp",
+        ".hpp": "cpp",
+        "main.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "stm32f4xx_hal_conf.h": "c"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "clangd.fallbackFlags": [
+        "-I${workspaceFolder}/Drivers/BSP/inc/",
+        "-I${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",
+        "-I${workspaceFolder}/Drivers/CMSIS/Include"
+    ]
+}
