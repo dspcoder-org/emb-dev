@@ -1,0 +1,1 @@
+this directory is used as mount to container to take the image out
