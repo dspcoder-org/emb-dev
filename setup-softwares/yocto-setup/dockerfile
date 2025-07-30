@@ -31,3 +31,10 @@ RUN git clone -b kirkstone git://git.yoctoproject.org/poky.git
 # Set up environment variables
 ENV TEMPLATECONF=/home/yocto/poky/meta-poky/conf
 ENV PATH=/home/yocto/poky/scripts:$PATH
+
+COPY ./meta-dspcoder /home/yocto/poky/meta-dspcoder
+
+# RUN /bin/bash -c "cd /home/yocto/poky && \
+#     source oe-init-build-env && \
+#     bitbake-layers add-layer ../meta-dspcoder && \
+#     bitbake dspcoder"

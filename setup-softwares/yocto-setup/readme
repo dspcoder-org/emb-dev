@@ -3,10 +3,12 @@ To build container:
 
 
 To run the container:
-    docker run -it --rm -v images:/home/yocto/workspace --name yocto-container yocto-build
+    docker run -it -v images:/home/yocto/workspace --name yocto-container yocto-build
 
 
 Inside container:
-    -   cd home/yocto/poky/
+    -   cd /home/yocto/poky/
     -   source oe-init-build-env
-    -   bitbake core-image-minimal
+    -   bitbake-layers add-layer ../meta-dspcoder
+    -   bitbake dspcoder
+
