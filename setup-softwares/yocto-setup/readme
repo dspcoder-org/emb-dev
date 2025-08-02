@@ -7,10 +7,9 @@ To run the container:
 
 
 Inside container:
-    -   cd /home/yocto/poky/
-    -   source oe-init-build-env
-    -   bitbake-layers add-layer ../meta-dspcoder
+    -   cd /home/yocto/poky/ && source oe-init-build-env && bitbake-layers add-layer ../meta-dspcoder
     -   bitbake dspcoder
 
-to boot into qemu after build:
+
+To boot into qemu after build:
     qemu-system-x86_64   -m 1024   -nographic   -kernel /home/yocto/poky/build/tmp/deploy/images/qemux86-64/bzImage   -append "root=/dev/vda rw console=ttyS0"   -drive file=/home/yocto/poky/build/tmp/deploy/images/qemux86-64/dspcoder-qemux86-64.ext4,format=raw,if=virtio   -net nic -net user
